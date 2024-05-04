@@ -5,7 +5,6 @@ dependencies:
   - black
   - flake8
   - isort
-  - json
   - jsonschema
   - pip
   - pre-commit
