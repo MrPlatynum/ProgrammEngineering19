@@ -5,13 +5,16 @@ import json
 from jsonschema import validate
 
 train_schema = {
-    "type": "object",
-    "properties": {
-        "название пункта назначения": {"type": "string"},
-        "номер поезда": {"type": "string"},
-        "время отправления": {"type": "string", "pattern": "^\\d{2}:\\d{2}$"}
-    },
-    "required": ["название пункта назначения", "номер поезда", "время отправления"]
+    "type": "array",
+    "items": {
+        "type": "object",
+        "properties": {
+            "название пункта назначения": {"type": "string"},
+            "номер поезда": {"type": "string"},
+            "время отправления": {"type": "string", "pattern": "^\\d{2}:\\d{2}$"}
+        },
+        "required": ["название пункта назначения", "номер поезда", "время отправления"]
+    }
 }
 
 
