@@ -1,0 +1,12 @@
+﻿name: ProgrammEngineering19
+channels:
+  - defaults
+dependencies:
+  - black
+  - flake8
+  - isort
+  - json
+  - jsonschema
+  - pip
+  - pre-commit
+  - python=3.12.0
